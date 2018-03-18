@@ -1,4 +1,4 @@
-# Index.js
+# Index Module
 Automatically export all other modules in the same directory. No configuration, no dependencies.
 
 ## Install
