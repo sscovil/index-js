@@ -1,5 +1,5 @@
 {
-  "name": "index-js",
+  "name": "index-module",
   "version": "1.0.0",
   "description": "Automatically export all other modules in the same directory. No configuration, no dependencies.",
   "main": "index.js",
