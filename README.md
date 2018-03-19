@@ -31,7 +31,7 @@ require('index-module')(module, customFilter);
 
 ## Custom Mapper
 
-You can pass a customer module name mapper function as the third argument, to control how a filename is converted to an exported module name.
+You can pass a custom module name mapper function as the third argument, to control how a filename is converted to an exported module name.
 
 ```js
 const _ = require('lodash');
