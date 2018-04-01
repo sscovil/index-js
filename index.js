@@ -51,7 +51,6 @@ module.exports = (module, filter = defaultFilter, mapper = defaultMapper) => {
   siblings.forEach((sibling) => {
     let moduleName;
     let siblingFile;
-    let siblingPath;
 
     siblingFile = path.parse(sibling);
 
@@ -64,8 +63,7 @@ module.exports = (module, filter = defaultFilter, mapper = defaultMapper) => {
     }
 
     moduleName = mapper(siblingFile.name, siblingFile.ext);
-    siblingPath = path.relative(__dirname, moduleFile.dir);
 
-    module.exports[moduleName] = require(path.resolve(siblingPath, siblingFile.base));
+    module.exports[moduleName] = require(path.resolve(moduleFile.dir, siblingFile.base));
   });
 };
